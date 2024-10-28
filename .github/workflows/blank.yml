@@ -6,11 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#      - uses: actions/checkout@v4
-      - name: clone repository
-        run: |
-          git clone https://github.com/xiaopeng163/github-actions-python
-          cd github-actions-python
+      - uses: actions/checkout@v4
+#      - name: clone repository
+#        run: |
+#          git clone https://github.com/xiaopeng163/github-actions-python
+#          cd github-actions-python
       - name: install pytest
         run: pip install pytest
       - name: Run pytest
